@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype-variations');
+    font-weight: 300 900;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype-variations');
+    font-weight: 300 900;
+}
+
+body {
+    font-family: 'Outfit';
+    font-style: normal;
+    background: #F3E5D7;
+}
+
+article {
+    margin: 128px auto;
+    padding: 40px;
+    width: 736px;
+    background: #FFFFFF;
+    border-radius: 24px;
+}
+
+.img {
+    width: 656px;
+    height: 300px;
+    background: url(./assets/images/image-omelette.jpeg);
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-family: 'Young Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    color: #312E2C;
+    margin-bottom: 24px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #5F564D;
+    margin-bottom: 32px;
+}
+
+.preparation {
+    padding: 24px;
+    width: 656px;
+    height: 172px;
+    background: #FFF7FB;
+    border-radius: 12px;
+    margin-bottom: 32px;
+}
+
+ul,
+ol {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    color: #7A284E;
+    margin-bottom: 16px;
+}
+
+svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+    margin-right: 24px;
+}
+
+li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #5F564D;
+}
+
+ul li {
+    height: 24px;
+}
+
+span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #5F564D;
+}
+
+h3 {
+    font-family: 'Young Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 100%;
+    color: #854632;
+    margin-bottom: 24px;
+}
+
+ol {
+    counter-reset: list-counter;
+}
+
+ol li {
+    position: relative;
+    list-style: none;
+    padding-left: 40px;
+}
+
+ol li::before {
+    content: counter(list-counter) '.';
+    counter-increment: list-counter;
+    position: absolute;
+    left: 0;
+    color: #7A284E;
+    font-weight: bold;
+    padding-left: 8px;
+    padding-right: 16px;
+}
+
+hr {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    border: 1px solid #E3DDD7;
+}
+
+.nutrition hr {
+    margin: 0;
+}
+
+.nutrition p {
+    margin: 0;
+}
+
+.nutrition {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nut {
+    margin-bottom: 24px;
+}
