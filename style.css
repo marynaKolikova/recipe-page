@@ -69,7 +69,6 @@ p {
 .preparation {
     padding: 24px;
     max-width: 656px;
-    height: 172px;
     background: #FFF7FB;
     border-radius: 12px;
     margin-bottom: 32px;
@@ -189,18 +188,17 @@ hr {
 
     article {
         max-width: 375px;
-        border-radius: 0%;
+        border-radius: 0;
         margin: 0 auto;
         padding: 0;
     }
 
     img {
-        border-radius: 0%;
+        border-radius: 0;
     }
 
     .preparation {
-        width: 311px;
-        height: 196px;
+        max-width: 311px;
     }
 
     h1 {
